@@ -3,9 +3,12 @@ class RegistrationController < ApplicationController
   end
 
   def create
-    @registration = Registrations.new(registration_params)
+    @registration = Registration.new(registration_params)
 
-    @registration.save
+    redirect_to registration_index_path
+  end
+
+  def show
   end
 
   def validate
