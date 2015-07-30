@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   resources :registration do
     collection do
       get :validate
+      get :task1
+      get :task2
+      get :task3
     end
   end
 

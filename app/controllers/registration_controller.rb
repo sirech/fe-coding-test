@@ -11,6 +11,15 @@ class RegistrationController < ApplicationController
   def show
   end
 
+  def task1
+  end
+
+  def task2
+  end
+
+  def task3
+  end
+
   def validate
     reg = Registration.new(registration_params)
     reg.valid?

@@ -1,0 +1,29 @@
+%hr
+
+= form_for :registrations, url: registration_index_path, html: { id: 'registration-form' } do |f|
+  = f.label :name
+  = f.text_field :name
+
+  = f.label :lastname
+  = f.text_field :lastname
+
+  = f.label :email
+  = f.text_field :email
+
+  = f.label :password
+  = f.password_field :password
+
+  = f.label :age
+  = f.select :age, [nil] + (18..100).map { |n| [n, n] }
+
+  = f.button 'Submit'
+
+:javascript
+  $(function() {
+    $("#registration-form").on("submit", function(event) {
+      setTimeout(function() {
+        this.submit();
+      }, 50);
+      event.preventDefault();
+    });
+  });
