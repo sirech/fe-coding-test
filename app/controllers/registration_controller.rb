@@ -20,6 +20,12 @@ class RegistrationController < ApplicationController
   def task3
   end
 
+  def task4
+  end
+
+  def bonus
+  end
+
   def validate
     reg = Registration.new(registration_params)
     reg.valid?

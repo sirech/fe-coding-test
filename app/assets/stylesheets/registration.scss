@@ -1,0 +1,43 @@
+.start-test-container {
+  text-align: center;
+
+  .start-test {
+    display: inline-block;
+  }
+
+  .button {
+    box-sizing: border-box;
+
+    background: #e4f500;
+    background-image: linear-gradient(to bottom, #d9e800 0, #c1cf00 100%);
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    line-height: 32px;
+
+    padding: 5px 10px;
+
+    &:hover {
+      text-decoration: none;
+
+      background-color: #e9f802;
+      background-image: linear-gradient(to bottom, #f2fb02 0, #dfea00 50%, #cfe200 100%);
+    }
+  }
+}
+
+.task3 {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+
+  > div {
+    margin-right: 15px;
+  }
+}

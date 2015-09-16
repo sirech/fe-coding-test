@@ -18,6 +18,8 @@ Rails.application.routes.draw do
       get :task1
       get :task2
       get :task3
+      get :task4
+      get :bonus
     end
   end
 

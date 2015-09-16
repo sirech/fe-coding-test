@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title FeCodingTest
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .header
+      = link_to 'XING - For a better working life', root_path, class: 'xing-logo'
+
+    - unless action_name == 'index'
+      = render 'layouts/navigation'
+
+    .content
+      = yield
+      - unless action_name == 'index'
+        = render 'form'
