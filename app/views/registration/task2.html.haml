@@ -1,19 +1,24 @@
-%h2 Task 2
-%p
-  Please validate the form elements in real time.
+= render 'layouts/navigation'
 
-%p
-  For this send a XHR request to the following endpoint:
-  %code= "#{validate_registration_index_path}"
+.content
+  %h2 Task 2
+  %p
+    Validate the form elements in real time.
 
-%p
-  The endpoint expects Key/Value pairs like:
-  %code= "registrations[name]:foo"
-  and will return:
-  %code
-    {"valid":boolean,"errors":Array}
+  %p
+    For this send a XHR request to the following endpoint:
+    %code= "#{validate_registration_index_path}"
 
-  %ol
-    %li Validation should be triggered when the element loses focus.
-    %li The password field should not be sent to the endpoint.
-    %li Invalid fields should be marked with a red border.
+  %p
+    The endpoint expects Key/Value pairs like:
+    %code= "registrations[name]:foo"
+    and will return:
+    %code
+      {"valid":boolean,"errors":Array}
+
+    %ol
+      %li Validation should be triggered when the element loses focus.
+      %li The password field should not be sent to the endpoint.
+      %li Invalid fields should be marked with a red border.
+
+  = render 'form'

@@ -8,11 +8,4 @@
   %body
     .header
       = link_to 'XING - For a better working life', root_path, class: 'xing-logo'
-
-    - unless action_name == 'index'
-      = render 'layouts/navigation'
-
-    .content
-      = yield
-      - unless action_name == 'index'
-        = render 'form'
+    = yield

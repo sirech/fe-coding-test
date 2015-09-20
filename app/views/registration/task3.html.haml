@@ -1,17 +1,22 @@
-%h2 Task 3
+= render 'layouts/navigation'
 
-%div.task3
-  %div
-    %h3 Part 1
+.content
+  %h2 Task 3
 
-    %p
-      Style the form so that it looks like this:
-      %br
-    = image_tag('test.png')
+  %div.task3
+    %div
+      %h3 Part 1
 
-  %div
-    %h3 Part 2
+      %p
+        Style the form so that it looks like this:
+        %br
+      = image_tag('test.png')
 
-    %p
-      Style the error messages from the previous task. The error message
-      should appear directly below the field
+    %div
+      %h3 Part 2
+
+      %p
+        Style the error messages from the previous task. The error message
+        should appear directly below the field
+
+  = render 'form'
