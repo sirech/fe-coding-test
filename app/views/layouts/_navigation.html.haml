@@ -1,26 +1,27 @@
-%nav#nav
-  %ul.nav-top
-    %li.profile
-      = image_tag('atimic.jpg')
-      Hello Aleksandar Timic!
-    %li
-      %a{href: "#"} Startpage
-    %li
-      %a{href: "#"} Contacts
-    %li
-      %a{href: "#", "data-messages-number"=>"3"} Messages
-    %li
-      %a{href: "#", class: "current-tab"} Coding Test
-    %li
-      %a{href: "#"} Premium
-  %ul.nav-bottom
-    %li
-      %a{href: "#"} Jobs
-    %li
-      %a{href: "#"} Events
-    %li
-      %a{href: "#"} News
-    %li
-      %a{href: "#"} Groups
-    %li
-      %a{href: "#"} Projects
+- unless params[:hide_navigation]
+  %nav#nav
+    %ul.nav-top
+      %li.profile
+        = image_tag('atimic.jpg')
+        Hello Aleksandar Timic!
+      %li
+        %a{href: "#"} Startpage
+      %li
+        %a{href: "#"} Contacts
+      %li
+        %a{href: "#", "data-messages-number"=>"3"} Messages
+      %li
+        %a{href: "#", class: "current-tab"} Coding Test
+      %li
+        %a{href: "#"} Premium
+    %ul.nav-bottom
+      %li
+        %a{href: "#"} Jobs
+      %li
+        %a{href: "#"} Events
+      %li
+        %a{href: "#"} News
+      %li
+        %a{href: "#"} Groups
+      %li
+        %a{href: "#"} Projects
