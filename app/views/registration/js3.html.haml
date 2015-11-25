@@ -1,0 +1,36 @@
+= render 'layouts/navigation'
+
+= render 'layouts/aside'
+
+%div#main-content
+
+  %h1 JS
+
+  .task
+    %p We have a way to trigger and receive events inside the page here at XING. You can register an event with:
+    %code= "xing.on(eventName, callback)"
+
+    %br
+    %br
+
+    %p And trigger one with:
+
+    %code= "xing.trigger(eventName, data)"
+
+    %br
+    %br
+
+    %p Test it with our echo service:
+    %code= "xing.trigger('echo', { s: 'This is data'})"
+
+  .task
+    Using events and independent components, we would like to act on correct form submissions by doing two things:
+
+    %br
+    %br
+
+    %ol
+      %li Increase the bubble counter
+      %li Add the newly created member to the sidebar
+
+  = render 'form'
