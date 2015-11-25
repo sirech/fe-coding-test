@@ -15,11 +15,14 @@ Rails.application.routes.draw do
   resources :registration do
     collection do
       get :validate
-      get :task1
-      get :task2
-      get :task3
-      get :task4
-      get :bonus
+
+      %i(js1 js2 js3).each do |js|
+        get js
+      end
+
+      %i(web1 web2 web3).each do |web|
+        get web
+      end
     end
   end
 

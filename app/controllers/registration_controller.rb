@@ -11,19 +11,9 @@ class RegistrationController < ApplicationController
   def show
   end
 
-  def task1
-  end
-
-  def task2
-  end
-
-  def task3
-  end
-
-  def task4
-  end
-
-  def bonus
+  %i(js1 js2 js3 web1 web2 web3).each do |action|
+    define_method action do
+    end
   end
 
   def validate
