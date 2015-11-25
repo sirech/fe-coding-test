@@ -1,11 +1,16 @@
 = render 'layouts/navigation', task: 'Task 3'
 
-.content
+= render 'layouts/aside', task: 'Task 3'
+
+%div#main-content
+
+  %h1 Please enter your data:
+
   %div.task3
     %div
       %h3 Part 1
 
-      %p
+      %p.task
         Style the form so that it looks like this:
         %br
       = image_tag('form.png')
@@ -13,7 +18,7 @@
     %div
       %h3 Part 2
 
-      %p
+      %p.task
         Style the error messages from the previous task. The error message
         should appear directly below the field
 

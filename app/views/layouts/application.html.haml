@@ -6,6 +6,12 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    .header
-      = link_to 'XING - For a better working life', root_path, class: 'xing-logo'
-    = yield
+    %header
+      %a{:href=>"#", :class=>"logo"} XING EVENTS
+    %main#content
+      = yield
+    %footer
+      %div{:class=>"pro-jobs"}
+        %em XING EVENTS JOBS
+        %span - Simply boost your carreer.
+      %nav{:class=>"footer-legal"} XING AG | All rights reserved

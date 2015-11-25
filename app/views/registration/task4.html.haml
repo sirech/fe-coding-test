@@ -1,12 +1,12 @@
 = render 'layouts/navigation', task: 'Task 4'
 
-%ul.extra-nav
-  %li= link_to('Awesome', '#')
-  %li= link_to('Amazing', '#')
-  %li= link_to('Astonishing', '#')
+= render 'layouts/aside', task: 'Task 4'
 
-.content
-  %p
+%div#main-content
+
+  %h1 Please enter your data:
+
+  %p.task
     This layout is not bad, but we would like something more spicy. As you
     can see in the picture, we would like to switch to a vertical navigation, which has a fixed width. To the right there is an extra navigation bar of fixed width too. The center takes the rest of the space, and the form should be centered within it.
     %br

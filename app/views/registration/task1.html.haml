@@ -1,7 +1,11 @@
 = render 'layouts/navigation', task: 'Task 1'
 
-.content
-  %p
-    Fix the bugs in the inline JavaScript code without removing the setTimeout function.
+= render 'layouts/aside', task: 'Task 1'
+
+%div#main-content
+
+  %h1 Please enter your data:
+
+  %p.task Fix the bugs in the inline JavaScript code without removing the setTimeout function.
 
   = render 'form'

@@ -1,2 +1,26 @@
-%ul.nav
-  %li= task
+%nav#nav
+  %ul.nav-top
+    %li.profile
+      %img{:src=>"atimic.jpg", :alt=>"ALEKSANDAR TIMIC"}
+      Hello Aleksandar Timic!
+    %li
+      %a{:href=>"#"} Startpage
+    %li
+      %a{:href=>"#"} Contacts
+    %li
+      %a{:href=>"#", "data-messages-number"=>"3"} Messages
+    %li
+      %a{:href=>"#", :class=>"current-tab"} Coding Test
+    %li
+      %a{:href=>"#"} Premium
+  %ul.nav-bottom
+    %li
+      %a{:href=>"#"} Jobs
+    %li
+      %a{:href=>"#"} Events
+    %li
+      %a{:href=>"#"} News
+    %li
+      %a{:href=>"#"} Groups
+    %li
+      %a{:href=>"#"} Projects
