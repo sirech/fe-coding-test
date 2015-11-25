@@ -1,266 +1,266 @@
 /* ******************************
 
-			GENERAL
+                        GENERAL
 
 ****************************** */
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 html, body {
-	height: 100%;
-	font-family:Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
-	padding: 80px 0 0;
-	min-height: 500px;
+  padding: 80px 0 0;
+  min-height: 500px;
 }
 
 a {
-	color: gray;
-	text-decoration: none;
+  color: gray;
+  text-decoration: none;
 }
 
 h1 {
-	font-size: 26px;
-	font-weight: 400;
-	line-height: 1.23077;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 1.23077;
 }
 
 
 /* ******************************
 
-			HEADER
+                        HEADER
 
 ****************************** */
 
 header {
-	background: #006567;
-	min-height: 80px;
-	top:0;
-	position:fixed;
-	left:0;
-	right:0;
-	z-index: 1000;
+  background: #006567;
+  min-height: 80px;
+  top:0;
+  position:fixed;
+  left:0;
+  right:0;
+  z-index: 1000;
 }
 
 .logo {
-	background:url(../img/logo.png) no-repeat top left;
-	display: inline-block;
-	height: 40px;
-	margin: 18px 0 0 48px;
-	text-indent: -10000px;
-	width: 200px;
+  background: image-url("logo.png") no-repeat top left;
+  display: inline-block;
+  height: 40px;
+  margin: 18px 0 0 48px;
+  text-indent: -10000px;
+  width: 200px;
 }
 
 
 /* ******************************
 
-			CONTENT
+                        CONTENT
 
 ****************************** */
 
 #content {
-	background:#ebebeb;
-	padding: 24px 24px 100px;
-	min-height: 100%;
+  background: #ebebeb;
+  padding: 24px 24px 100px;
+  min-height: 100%;
 }
 
 
 /* ******************************
 
-			NAVIGATION
+                        NAVIGATION
 
 ****************************** */
 
 #nav {
-	float:left;
-	width: 228px;
-	background: #f2f2f2;
+  float:left;
+  width: 228px;
+  background: #f2f2f2;
 
-	a {
-		display: block;
-		font-size: 13px;
-		font-weight: 800;
-		height: 50px;
-		padding: 15px 48px 0 24px;
-		position: relative;
-	}
+  a {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    height: 50px;
+    padding: 15px 48px 0 24px;
+    position: relative;
+  }
 
-	a[data-messages-number]:after {
-		background: #ff8400;
-		border-radius: 50%;
-		color: #fff;
-		content: attr(data-messages-number);
-		display: block;
-		font-size: 11px;
-		font-weight: 700;
-		height: 20px;
-		line-height: 18px;
-		position: absolute;
-		right: 12px;
-		top: 15px;
-		text-align: center;
-		width: 20px;
-	}
+  a[data-messages-number]:after {
+    background: #ff8400;
+    border-radius: 50%;
+    color: #fff;
+    content: attr(data-messages-number);
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    height: 20px;
+    line-height: 18px;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    text-align: center;
+    width: 20px;
+  }
 }
 
 #nav a:hover, .current-tab {
-	color: #009090;
+  color: #009090;
 }
 
 .current-tab:before {
-	background: #009090;
-	content: " ";
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 5px;
+  background: #009090;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
 }
 
 .profile {
-	color: #009090;
-	font-size: 15px;
-	font-weight: 700;
-	padding: 24px 16px 24px 100px;
-	position: relative;
+  color: #009090;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 24px 16px 24px 100px;
+  position: relative;
 
-	img {
-		left: 24px;
-		top: 50%;
-		margin-top: -30px;
-		position: absolute;
-		width: 60px;
-	}
+  img {
+    left: 24px;
+    top: 50%;
+    margin-top: -30px;
+    position: absolute;
+    width: 60px;
+  }
 }
 
 .nav-top {
-	background: #FFF;
-	padding: 7px 0;
+  background: #FFF;
+  padding: 7px 0;
 
-	li:last-child {
-		margin-bottom: 0;
-	}
+  li:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .nav-bottom {
-	padding: 7px 0;
+  padding: 7px 0;
 }
 
 
 /* ******************************
 
-			MAIN CONTENT
+                        MAIN CONTENT
 
 ****************************** */
 
 #main-content {
-	margin: 0 332px 0 240px;
-	background: #FFF;
-	margin-bottom: 24px;
-	min-height: 100%;
-	padding: 24px;
+  margin: 0 332px 0 240px;
+  background: #FFF;
+  margin-bottom: 24px;
+  min-height: 100%;
+  padding: 24px;
 
-	h1 {
-		border-bottom: 1px solid #e0e0e0;
-		margin-bottom: 24px;
-		padding-bottom: 12px;
-	}
+  h1 {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+  }
 }
 
 form {
-	margin: 0 auto;
-	width: 300px;
+  margin: 0 auto;
+  width: 300px;
 }
 
 label {
-	display: block;
+  display: block;
 }
 
 
 /* ******************************
 
-			OTHER CONTENT
+                        OTHER CONTENT
 
 ****************************** */
 
 #other-content {
-	background: #FFF;
-	float: right;
-	width: 320px;
-	padding: 24px;
+  background: #FFF;
+  float: right;
+  width: 320px;
+  padding: 24px;
 }
 
 .right-headline {
-	font-size: 18px;
-	font-weight: 400;
-	margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .team li {
-	padding: 12px 0;
+  padding: 12px 0;
 }
 
 .user-name {
-	color: #009090;
-	display: block;
-	font-size: 15px;
-	font-weight: 700;
-	margin: 0 8px 0 0;
-	max-width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  color: #009090;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 8px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .user-position {
-	color: gray;
-	font-size: 13px;
+  color: gray;
+  font-size: 13px;
 }
 
 
 /* ******************************
 
-			FOOTER
+                        FOOTER
 
 ****************************** */
 
 footer {
-	height: 100px;
-	margin-top: -100px;
-	position: relative;
-	text-align: center;
+  height: 100px;
+  margin-top: -100px;
+  position: relative;
+  text-align: center;
 }
 
 .pro-jobs {
-	background:#333333;
-	color: #FFF;
-	font-size: 20px;
-	font-weight: 100;
-	height: 50px;
-	padding: 12px 24px;
+  background:#333333;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 100;
+  height: 50px;
+  padding: 12px 24px;
 
-	em {
-		color: #e4f500;
-		font-style: normal;
-	}
+  em {
+    color: #e4f500;
+    font-style: normal;
+  }
 }
 
 .footer-legal {
-	background: #006567;
-	color: #b8cdcd;
-	font-size: 11px;
-	height: 50px;
-	padding: 18px 24px 0;
+  background: #006567;
+  color: #b8cdcd;
+  font-size: 11px;
+  height: 50px;
+  padding: 18px 24px 0;
 }
 
 

@@ -1,11 +1,21 @@
-= render 'layouts/navigation', task: 'Task 1'
+= render 'layouts/navigation'
 
-= render 'layouts/aside', task: 'Task 1'
+= render 'layouts/aside'
 
 %div#main-content
 
-  %h1 Please enter your data:
+  %h1 JS
 
   %p.task Fix the bugs in the inline JavaScript code without removing the setTimeout function.
+
+  :javascript
+    $(function() {
+      $("#registration-form").on("submit", function(event) {
+        setTimeout(function() {
+          this.submit();
+        }, 50);
+        event.preventDefault();
+      });
+    });
 
   = render 'form'
