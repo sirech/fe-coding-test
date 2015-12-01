@@ -4,25 +4,4 @@
 
 %div#main-content
 
-  %h1 JS
-
-  %p.task
-    Validate the form elements in real time.
-
-  %p.task
-    For this send a XHR request to the following endpoint:
-    %code= "GET #{validate_registration_index_path}"
-
-  %p.task
-    The endpoint expects Key/Value pairs like:
-    %code= "registrations[name]:foo"
-    and will return:
-    %code
-      {"valid":boolean,"errors":Array}
-
-    %ol
-      %li Validation should be triggered when the element loses focus.
-      %li The password field should not be sent to the endpoint.
-      %li Invalid fields should be marked with a red border.
-
   = render 'form'

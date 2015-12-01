@@ -18,10 +18,12 @@ Rails.application.routes.draw do
 
       %i(js1 js2 js3).each do |js|
         get js
+        get :"#{js}-details"
       end
 
       %i(web1 web2 web3).each do |web|
         get web
+        get :"#{web}-details"
       end
     end
   end

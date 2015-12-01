@@ -14,6 +14,9 @@ class RegistrationController < ApplicationController
   %i(js1 js2 js3 web1 web2 web3).each do |action|
     define_method action do
     end
+
+    define_method :"#{action}_details" do
+    end
   end
 
   def validate
